@@ -8,63 +8,60 @@ header {
   justify-content: space-around;
  margin-top: 4%;
  /*margin-bottom: 1%;
-*/ margin-right: 5%;
+*/
+ margin-right: 5%;
   margin-left: 4%;
 }
 
-ul {
-   flex:2;
-  display: flex;
-  flex-direction: row;
-  
+/*header svg{
+  flex:1;
 }
 
-li {
-  list-style-type: none;
-  padding-left: 30px;
+header ul{
+  flex:5;
 }
 
-
+header buttons{
+  flex:1;
+}
+*/
+/*--------------------------------buttons start ------------------------------------------------------------*/
 
 header button{
   border-radius: 7px; 
-  /*font-size: 13px;*/
 }
-
-
-
 
 #buttons{
 font-weight: bold;
  display:flex;
  flex-direction: row;
-align-items: flex-start;
- width:15%;
- height: 10vh;
- height: 6vh
-}
+ width:30vh ;
+ height: 5vh;
 
+}
 
 #button1{
   background: white;
    border-color:#D6DADE;
    border-width:1px;
-   flex:1;
-  margin-right:10%
+   flex:2;
+
+ margin-right: 10%;
+width:700vw;
 }
 
 #button2{
   color: white;
   background: #3EA9F5;
   border-color:transparent;
-  flex:1;
+  flex:2;
 }
 
-
+/*--------------------------------buttons end ------------------------------------------------------------*/
 
 /*hover over a navbar */
 
-header a{
+/*header a{
  text-decoration: none;
 color: black;}
 
@@ -78,20 +75,63 @@ color: black;}
 .drop-content div{
   flex:1;
 }
+*/
 
 
-header:hover ~ .drop-content{
-/*background-color: blue;*/
-  
+
+#ul1{
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex:2;
+  padding-right: 25%;
+  list-style-type: none;
+
+}
+
+.li1{
+ /* background-color: pink;*/
+ font-weight: bold;
+}
+
+#li2{
+  display: none;
+}
+li{
+  margin-right: 5%;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+
+
+
+header:hover + #li2{
+
+/*display: flex;
+flex-direction: row;
+padding-left: 3%;
+position: relative;*/
+
+display: flex;
   flex-direction:row;
-     z-index:0;
-      position: absolute;
+     z-index:1;
+      position: fixed;
       background-color: white;
       width: 100%;
+      margin:0;
+
 
 
 }
+
+#li2 div{
+  flex:1;
+}
+
+
+
+
 
 /*li:hover {
 
